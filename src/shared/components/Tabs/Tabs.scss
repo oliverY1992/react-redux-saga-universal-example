@@ -1,0 +1,23 @@
+.tabs{
+  .tabs-nav{
+    &:after{
+      display: block;
+      content: '';
+      clear: both;
+    }
+    .tabs-nav-item{
+      float: left;
+      & .active{
+        color: coral;
+      }
+    }
+  }
+  .tabs-content{
+    .tabs-pane{
+      display: none;
+      & .active{
+        display: block;
+      }
+    }
+  }
+}
